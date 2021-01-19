@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+
+:root {
+  --blue: #00558d;
+  --light-blue: #b8d9dd;
+  --bg-white-40: rgba(255, 255, 255, 0.4);
+  --bg-white-75: rgba(255, 255, 255, 0.75);
+  --bg-white-90: rgba(255, 255, 255, 0.9);
+  --bg-black-30: rgba(0, 0, 0, 0.3);
+  --bg-black-75: rgba(0, 0, 0, 0.75);
+  --border: 1px solid white;
+
+  /* Font variables*/
+  --primary-font: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+body {
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(30deg, var(--blue), var(--light-blue));
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 20vw;
+  height: 40vh;
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.lastResult {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#guessField {
+  margin: 15px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+input:hover {
+  background-color: black;
+}
+
+.guessField {
+  background-color: white;
+  color: black;
+}
+
+.guessField:hover {
+  background-color: white;
+}
